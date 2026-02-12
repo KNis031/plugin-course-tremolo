@@ -62,7 +62,7 @@ if(CMAKE_SYSTEM_NAME STREQUAL "Windows")
 endif()
 
 # Adds a plugin target.
-set(TREMOLO_PLUGIN_NAME "Tremolo")
+set(TREMOLO_PLUGIN_NAME "Mytremolo")
 juce_add_plugin(
   TremoloCoursePlugin
   PRODUCT_NAME
@@ -74,7 +74,7 @@ juce_add_plugin(
   PLUGIN_MANUFACTURER_CODE
     Knis
   PLUGIN_CODE
-    Trcp
+    Mtcp
   FORMATS
     Standalone
     AU
@@ -107,8 +107,8 @@ juce_add_binary_data(tremolo_plugin_assets
   SOURCES
     assets/Background.png
     assets/Logo.png
-    assets/Inter-Bold.ttf
-    assets/Inter-Medium.ttf
+#    assets/Inter-Bold.ttf
+#    assets/Inter-Medium.ttf
 )
 
 add_library(tremolo::tremolo_plugin_assets ALIAS tremolo_plugin_assets)
